@@ -1,0 +1,11 @@
+CREATE table emp
+(
+empid number primary key,
+empname varchar2(20),
+empdept varchar2(20),
+emplocation varchar2(20)
+);
+
+commit;
+
+insert into emp values(0001,'Gajanan','Research','pune');

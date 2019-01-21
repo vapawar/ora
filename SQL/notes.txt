@@ -1,0 +1,32 @@
+------create new user
+create user usr_name identified by passwd;
+------------------------------------------
+
+
+------provide usr permission
+grant connect,resource to usr_name;
+-----------------------------------
+
+
+------delete user
+drop user usr_name;
+-------------------
+
+
+
+------joins on table
+select tabel1.colom, table2.colom from tabel1
+join tabe2 on table1.colom=table2.colom;
+----------------------------------------
+
+
+------to create new table as clone of old
+create table customers2 as(select * from customers);
+----------------------------------------------------
+
+
+------to create new table as old without data copy
+create table emp2 as(select * from emps where id<0);
+----------------------------------------------------
+id<0 condition not matching to any row
+--------------------------------------
